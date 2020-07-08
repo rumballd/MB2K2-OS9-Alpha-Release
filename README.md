@@ -23,8 +23,6 @@ Boot from MON09 with the ‘BO’ command for OS9 or the ‘BF’ command for FL
 
 After OS9 boots the red 6809 LED will flash once a second to show that the clock is running and the date and time are set from the RTC so there's no need to set the clock.
 
-This build only supports the serial ports for the console.
-
 Whilst there is support for both the PROMdisk (/d0) and RAMdisk (/r0), at the moment it's necessary to format the RAMdisk first before using with OS9 with the 'format' command.  (format /r0)
 
 
