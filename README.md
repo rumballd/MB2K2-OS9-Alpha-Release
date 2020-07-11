@@ -1,4 +1,4 @@
-# MB2K2-pre-release
+# MB2K2-OS9-Alpha-release
  pre release files for the MB2K2
 
 These are the files for the alpha release of OS-9 L1 for the MB2K2.
