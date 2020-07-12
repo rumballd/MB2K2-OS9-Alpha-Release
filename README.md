@@ -26,7 +26,7 @@ After OS9 boots the red 6809 LED will flash once a second to show that the clock
 The supported drive types are:-
     PROMdisk - /d0
     RAMdisk - /r0    note: Format the RAMdisk first before use with the 'format' command.  (format /r0)
-    FLEXNet - /h0   note: mount a remote volume with 'rmount /h0 <image name>'  (only /h0 is supported at the moment)
+    FLEXNet - /h0 to /h3   note: mount a remote volume with 'rmount /hN <image name>'  where N is in the range 0-3 
     
 floppymaint.exe and FLEX-0S9-Net.exe are courtesy of Mike Evenson
 
