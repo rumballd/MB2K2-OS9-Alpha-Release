@@ -1,4 +1,4 @@
-# MB2K2-pre-release
+# MB2K2-OS9-Alpha-release
  pre release files for the MB2K2
 
 These are the files for the alpha release of OS-9 L1 for the MB2K2.
@@ -27,6 +27,8 @@ The supported drive types are:-
     PROMdisk - /d0
     RAMdisk - /r0    note: Format the RAMdisk first before use with the 'format' command.  (format /r0)
     FLEXNet - /h0   note: mount a remote volume with 'rmount /h0 <image name>'  (only /h0 is supported at the moment)
+    
+floppymaint.exe and FLEX-0S9-Net.exe are courtesy of Mike Evenson
 
 
 
