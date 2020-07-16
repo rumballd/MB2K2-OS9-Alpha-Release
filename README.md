@@ -1,5 +1,5 @@
 # MB2K2-OS9-Alpha-release
- pre release files for the MB2K2
+ pre release files for the MB2K2 - last updated 2020-07-16
 
 These are the files for the alpha release of OS-9 L1 for the MB2K2.
 
@@ -17,16 +17,17 @@ If you don't have the Xmos tools installed, the 'Firmware Build and Flashing gui
 
 Build notes
 
-Both the FLEX and OS9 OSs and are in the same build/flash image and the PROMdisk is a combination of a FLEX disk image followed by an OS9 disk image. OS9 is 'preloaded' into RAM when the MB2K2 starts up whilst the FLEX PROMdisk has FLEX.cor.
+Both the FLEX and OS9 OSs and are in the same build/flash image and the PROMdisk is a combination of a FLEX disk image followed by an OS9 disk image. OS9 is 'preloaded' into RAM when the MB2K2 starts up whilst the FLEX PROMdisk has FLEX.cor. Each disk image is 1.44MB
 
 Boot from MON09 with the ‘BO’ command for OS9 or the ‘BF’ command for FLEX. FLEX should run just as before but note that booting FLEX will overwrite the OS9 kernel requiring a restart (power off and on) of the MB2K2 before booting into OS9.
 
 After OS9 boots the red 6809 LED will flash once a second to show that the clock is running and the date and time are set from the RTC so there's no need to set the clock.
 
 The supported drive types are:-
-    PROMdisk - /d0
+    PROMdisk - /d0 /dd
     RAMdisk - /r0    note: Format the RAMdisk first before use with the 'format' command.  (format /r0)
-    FLEXNet - /h0 to /h3   note: mount a remote volume with 'rmount /hN <image name>'  where N is in the range 0-3 
+    FLEXNet - /h0 to /h3   note: mount a remote volume with 'rmount [/hN] <image name>'  where N is in the range 0-3 
+    supported FLEXNet commands are 'RESYNC', 'RMOUNT', 'RDIR'. 'RCD' and 'REXIT' (If no drive is specified in RMOUNT then /h0 is assumed.)
     
 floppymaint.exe and FLEX-0S9-Net.exe are courtesy of Mike Evenson
 
